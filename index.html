@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UV-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top 
+                        }, 800, function(){
+                            window.location.hash = hash;
+                     });
+                    }
+                 });
+                });
+        </script>
+    
+    
+    </head>
+
+<body>
+    
+    <div class="banner" id="home" >
+        
+        <div class="navbar">
+            <div class="logo"> UNSEEN </div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#news"> NEWS </a></li>
+                <li><a href="#about"> ABOUT US </a></li>
+                <li><a href="#gallery"> GALLERY </a></li>
+                <li><a href="#testimony"> TESTIMONY </a></li>
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> The POSITIVE Outcomes </h1>
+            <p> For more outcomes please subscribe to our channel. </p>
+            
+            <div class="buttons">
+                <button type="button"> <span></span> READ MORE </button>
+                <button type="button"> <span></span> WATCH MORE </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!---news-->
+
+    <style>
+        body{
+        Background-image: url("img/wk.jpg")
+        }
+
+    </style>
+
+    <div class="blog-section" id="news">
+        
+        <div class="section-content">
+            
+            <div class="title">
+                <h2>NOTE TO SELF!</h2>
+                <p>Realize that....</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="image-section">
+                    <img src="img/n222.jpg">
+                
+            </div>
+            
+            <div class="article">
+                <h4> People Come and Go </h4>
+                <p> Don't settle for anything that is temporary. 
+                    Don't be a people pleaser.It's okay to cry but don't stay for too long.
+                    Don't Go with people have no care for you.
+                 </br></br>
+
+                    Always think that you are enough and worthy.
+                    </p>
+                </div>
+                
+                <div class="blog-view">
+                    <a href="" class="button"> Read More </a>
+                </div>
+                
+                <div class="posted-date">
+                    <p>Date Posted: July 18, 2023</p>
+                </div>
+            </div>
+
+        <div class="card">
+
+            <div class="image-section">
+            <img src="img/n333.jpg">
+            </div>      
+            
+            <div class="article">
+                <h4> Choose Yourself </h4>
+                <p> Prioritize yourself , your health, success and the people that matters to you.
+                It's okay to be selfish until you feel yourself again.
+                     </br></br>
+                   Be a priority, not an option. </p>
+                </div>
+                
+                
+                <div class="blog-view">
+                    <a href="" class="button"> Read More </a>
+                </div>
+
+                <div class="posted-date">
+                    <p>Date Posted: July 18, 2023</p>
+                </div>            
+            </div>
+            
+            <div class="card">
+                
+                <div class="image-section">
+                    <img src="img/n.jpg">
+                </div>
+            
+                <div class="article">
+                    <h4> Don't Expect!</h4>
+                    <p>Lower your expectation to avoid disappoinment.
+                         Prepare for the worst, do your best!.</br></br>
+                        
+                         Expect less to get life better.
+                        </p>
+                    </div>
+                    
+                    <div class="blog-view">
+                        <a href="" class="button"> Read More </a>
+                    </div>
+
+                    <div class="posted-date">
+                        <p>Date Posted: July 18, 2023</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!---about-->
+
+    
+<div class="about-section" id="about">
+
+    <div class="heading">
+        
+        <div class="section-content">
+            
+         <h1>About US </h1>
+
+         <p>This page contains LIFE ADVICES.</p>
+         
+        </div>
+
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="img/55.jpg">
+                </div>
+
+                <div class="about-content">
+                    <h2>Note That!</h2>
+                    <p> No matter how many of
+                    your plans have failed this year, Keep on trying . 
+                    For every failure ,
+                    there is a lessons to keep. Remember,
+                    He has better plans destined for you.
+                    Keep on learning while your wings are not
+                    yet ready to soar high.
+                    Just keep moving there are better days ahead.
+                  </p>
+
+                    <a href="#" class="read-more"> Read More</a>
+                </div>
+
+            </section>
+    </div>
+</div>
+
+</div>
+
+<!--Gallery Page--->
+
+
+<div class="gallery" id="gallery">
+    
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2" >
+    <input type="radio" name="photos" id="check3">
+    <input type="radio" name="photos" id="check4">
+
+    <div class="gallery-container">
+    <h1> OUR PHOTO GALLERY </h1>
+        <div class="top-content">
+            <h3>Photo Gallery </h3>
+            <label for="check1"> All Photos</label>
+            <label for="check2"> Events Photos</label>
+            <label for="check3"> Bonding Photos</label>
+            <label for="check4"> Outing Photos</label>
+    </div>
+    
+    
+    <div class="photo-gallery">
+        
+        <div class="pic Events">
+            <img src="img/w.jpg">
+        </div>
+        
+        <div class="pic Bonding">
+            <img src="img/b.jpg">
+        </div>
+        
+        <div class="pic Outing">
+            <img src="img/o.jpg">
+        </div>
+
+        <div class="pic Events">
+            <img src="img/ww.jpg">
+        </div>
+
+        <div class="pic Bonding">
+            <img src="img/bb.jpg">
+        </div>
+
+        <div class="pic Outing">
+            <img src="img/oo.jpg">
+        </div>
+
+        <div class="pic Events">
+             <img src="img/qqqqqq.jpg">
+        </div>
+
+        <div class="pic Bonding">
+            <img src="img/bbb.jpg">
+        </div>
+
+        <div class="pic Outing">
+            <img src="img/ooo.jpg">
+        </div>
+
+        <div class="pic Events">
+            <img src="img/q.jpg">
+        </div>
+
+        <div class="pic Bonding">
+            <img src="img/bbbb.jpg">
+        </div>
+
+        <div class="pic Outing">
+            <img src="img/oooo.jpg">
+        </div>
+    
+    </div>
+
+</div>
+
+</div>
+
+
+
+<!---testimony--->
+
+
+<div class="testimony" id="testimony"></div>
+<div class="rose">
+    <h1>TESTIMONIALS</h1>
+    
+<div class="janins">
+
+<div class="janin">
+    <img src="img/m.jpg">
+    <br></br>
+    <h2>JACKY</h2>
+    <p>
+        It's why "loving yourself first" is the most
+                        common, the most confusing, and yet the
+                        most profoundly solid advice anyone can
+                        give. Because it's not really about feeling
+                        love for yourself; it's being able to feel
+                        stable enough that your mindset doesn't rest
+                        in the narrative of a supposed other's.
+                        This is why things hurt so badly when we
+                        identify with them. All hatred is self-hatred.
+                        This is why we become so goddamned
+                        heartbroken. We cannot lose people; we can
+                        only lose ourselves in an idea of them. We
+                        decided how we felt about ourselves through
+                        them for better and for worse-so when we
+                        perceive that their mindset changes from
+                        loving us to loving someone else, our own
+                        stability goes out the window, too.</p>
+   
+         <a href="" class="button"> See More </a>
+  
+</div>
+
+
+<div class="janin">
+
+    <img src="img/mm.jpg">
+    <br></br>
+    <h2>JYSETH</h2>
+    <p>
+        Believing what other people could say
+                       before they say it doesn't give us a defense
+                       against it.
+                       You have to stop believing that you need
+                       other people's permission to be okay with
+                       yourself. That however you do or don't align
+                       with what other people value determines
+                       your worth. That however the world does or
+                       doesn't show you kindness is a direct
+                       reflection of how much you deserve it. You
+                       have to be kind to yourself. Even, and
+                       probably most especially, when it seems
+                       least deserved.
+       </p>
+         <a href="" class="button"> See More </a>
+    
+</div>
+
+
+<div class="janin">
+    <img src="img/mmm.jpg">
+    <br></br>
+    <h2>FLORIDEN</h2>
+    <p>
+        You have to stop living for how other people
+                            will remember you. Stop living by telling
+                            yourself the story that you think other
+                            people will be happy reading. Because it's
+                            an empty and lifeless one, and it robs you of
+                            the thing you're most seeking when you do
+                            it. The most important thing is that you do
+                            what makes you happy and that you
+                            understand that your happiness is your
+                            choice and your responsibility alone. It is
+                            not a day or a job or a relationship or a
+                            change away, it's right now. The only work
+                            to do is to remove the blocks that prevent
+                            you from living it out. The only change that
+                            has to happen is to you.</p>
+        <a href="" class="button"> See More </a>
+   
+   
+   
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+<!-- footer -->
+
+<br></br>
+<footer>
+    <div class="social">
+        <i><a href="#"><i class="fa fa-facebook"></i></a>
+       <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+      
+    </div>
+    
+    <p class="copyright"><i class="fa fa-share" aria-hidden="true">Managed and Created by Janin Rose @ 2023</i></p>
+</footer>
+
+
+
+<!--back top-->
+
+
+<a href="#home" id= "my8tn" title="Go to To" i class="fa fa-arrow-circle-up" aria-hidden="true"> TOP </a>  
+
+<script>
+
+    let mybutton = document.getElementById("my8tn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+   mybutton.style.display = "block";
+} else {
+   mybutton.style.display = "none";
+}
+}
+
+</script>
+
+</br>
+</br>
